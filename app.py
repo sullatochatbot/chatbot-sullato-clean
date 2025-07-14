@@ -78,8 +78,7 @@ def send_message(phone_number, text):
     response = requests.post(url, headers=headers, json=payload)
     print("📤 Resposta enviada:", response.status_code, response.text)
 
-Comentando sys.exit para liberar execução no Render
-
+# Comentando sys.exit para liberar execução no Render
 
 # === Inicialização do Servidor Flask ===
 if __name__ == "__main__":
