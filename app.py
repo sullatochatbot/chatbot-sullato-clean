@@ -4,7 +4,7 @@ import json
 import os
 
 import sys
-sys.exit("🛑 Encerrando app.py para confirmar execução no Render")
+# sys.exit("🔴 Encerrando app.py para confirmar execução no Render")
 
 app = Flask(__name__)
 
@@ -77,6 +77,9 @@ def send_message(phone_number, text):
 
     response = requests.post(url, headers=headers, json=payload)
     print("📤 Resposta enviada:", response.status_code, response.text)
+
+Comentando sys.exit para liberar execução no Render
+
 
 # === Inicialização do Servidor Flask ===
 if __name__ == "__main__":
