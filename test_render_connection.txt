@@ -1,2 +1,0 @@
-Confirmação forçada para liberar deploy no Render.
-
